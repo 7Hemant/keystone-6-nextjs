@@ -1,7 +1,7 @@
 import withPreconstruct from "@preconstruct/next";
 
 export default withPreconstruct({
-  distDir: "build",
+
   experimental: {
     appDir: true,
 
