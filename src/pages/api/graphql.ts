@@ -1,6 +1,6 @@
-import { createYoga } from 'graphql-yoga';
-import type { NextApiRequest, NextApiResponse } from 'next';
-import { keystoneContext } from '../../keystone/context';
+import { createYoga } from "graphql-yoga";
+import type { NextApiRequest, NextApiResponse } from "next";
+import { keystoneContext } from "../../keystone/context";
 
 /*
   An example of how to setup your own yoga graphql server
@@ -18,7 +18,7 @@ export default createYoga<{
   req: NextApiRequest;
   res: NextApiResponse;
 }>({
-  graphqlEndpoint: '/api/graphql',
+  graphqlEndpoint: "/api/graphql",
   schema: keystoneContext.graphql.schema,
   /*
     `keystoneContext` object doesn't have user's session information.
